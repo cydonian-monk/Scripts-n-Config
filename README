@@ -1,0 +1,74 @@
+README - Scripts-n-Config - Bash Scripts and Useful Config Files
+
+A collection of bash scripts and config files I've written over the years.
+
+    Note: Gentoo is my primary distro, so some of these migth not make
+        sense on other flavours (especially Debian-based or window-manager-
+	heavy distros... may be completely useless on Ubuntu).
+
+xinitrc - I've only used blackbox/fluxbox over the years. So I save a few 
+    extra steps in the xinit by only allowing fluxbox to run. Fewer things
+    to fail, and it starts (marginally) faster. What? No failover? If 
+    fluxbox doesn't start then your X install is probably hosed anyway.
+
+    Requires: xorg-X11
+
+video-dualhead.sh - Old, old script here. xorg-X11 has fixed the issue 
+    this script fixes.  Starts and stops an old Dual-Head monitor setup. 
+    This script has not been used or tested since 2009, and my hardware
+    has changed considerably since, so it may not even work.  The primary
+    use of this script was to enable and disable HDMI/DVI out to my TV 
+    for watching video.
+
+    Requires: xrandr
+
+fluxbox-menu - The menu file from my .fluxbox resource folder.
+
+    Requires: fluxbox
+
+.bashrc
+    My default .bashrc, based on the Gentoo default.
+
+inittab
+    I don't like having 6 terminals active. Plus I like to display the 
+    battery status on a terminal for easy access. (I need to update this
+    to not use the legacy ACPI paths.)
+
+tty_sysmon.sh
+    A simple script used by inittab to display battery status.
+
+cm_mount.sh
+cm_umount.sh
+    Mount and unmount scripts for my fileshares. These only exist so I can
+    mount/unmount the shares from the fluxbox menu.
+
+codeheader
+    The header include for my personal coding projects.
+
+Release Notes:
+
+2012/04/12 - Andy Cummings <cydonian.monk@gmail.com>
+
+ I recently rebuilt the Gentoo system on my AMD netbook, and decided I needed
+ more backup options for my bash scripts and config files. Thus this update. 
+ Also included are a few new files. New to me, since this is a new github
+ repo.....
+
+2011/07/10 - Andy Cummings <cydonian.monk@gmail.com>
+
+ These scripts are distributed with ABSOLUTELY NO WARRANTY, and are not 
+ distributed under any license.  Most of these are so simple and obvious that 
+ copyright probably couldn't even be claimed.  If you really want to pick a 
+ copyright fight about one or all of these scripts, you can have them.
+ 
+ These scripts are distributed in the hope they will be helpful.  If they
+ prove to be less than helpful, or cause a synthetic uprising, you and
+ you alone are to blame.  If you use one of these scripts and manage to 
+ blow up your system, don't come crying to me.  Do not taunt these scripts.
+
+ I'll add more to this as I dig through my archives.  Many of the advances 
+ in the Linux desktop in recent years have obsoleted many of my scripts.
+ Likewise with the config files.  Obviously specific hardware makes many of
+ them useless to you.
+
+ AWC
