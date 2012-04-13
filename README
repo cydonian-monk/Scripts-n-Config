@@ -2,19 +2,19 @@ README - Scripts-n-Config - Bash Scripts and Useful Config Files
 
 A collection of bash scripts and config files I've written over the years.
 
-    Note: Gentoo is my primary distro, so some of these migth not make
-        sense on other flavours (especially Debian-based or window-manager-
-	heavy distros... may be completely useless on Ubuntu).
+    Note: Gentoo is my primary distro, so some of these might not make
+        sense on other Linux flavours (especially window-manager-heavy 
+	distros... probably completely useless on Ubuntu).
 
-xinitrc - I've only used blackbox/fluxbox over the years. So I save a few 
-    extra steps in the xinit by only allowing fluxbox to run. Fewer things
+xinitrc - I've only used blackbox/fluxbox for the last several years. 
+    I save a few steps in xinit by only allowing fluxbox to run. Fewer things
     to fail, and it starts (marginally) faster. What? No failover? If 
     fluxbox doesn't start then your X install is probably hosed anyway.
 
     Requires: xorg-X11
 
-video-dualhead.sh - Old, old script here. xorg-X11 has fixed the issue 
-    this script fixes.  Starts and stops an old Dual-Head monitor setup. 
+video-dualhead.sh - Start and stops an old dual-head monitor setup. Old, old 
+    script here. xorg-X11 has fixed the issue this script existed for.  
     This script has not been used or tested since 2009, and my hardware
     has changed considerably since, so it may not even work.  The primary
     use of this script was to enable and disable HDMI/DVI out to my TV 
@@ -51,8 +51,8 @@ Release Notes:
 
  I recently rebuilt the Gentoo system on my AMD netbook, and decided I needed
  more backup options for my bash scripts and config files. Thus this update. 
- Also included are a few new files. New to me, since this is a new github
- repo.....
+ Also included are a few new files. New to you, since this is a new github
+ repo....
 
 2011/07/10 - Andy Cummings <cydonian.monk@gmail.com>
 
