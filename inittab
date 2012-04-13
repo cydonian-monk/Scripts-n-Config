@@ -11,6 +11,7 @@
 #
 # Authors: AWC - Andy W. Cummings <cydonian.monk@gmail.com>
 # Revision History:  
+#      2012/04/13 AWC Added MemInfo to tty10.
 #      2012/04/12 AWC Initial github copy.
 #
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/sysvinit/files/inittab-2.87,v 1.1 2010/01/08 16:55:07 williamh Exp $
@@ -47,7 +48,7 @@ c3:2345:respawn:/sbin/agetty 38400 tty3 linux
 #c5:2345:respawn:/sbin/agetty 38400 tty5 linux
 #c6:2345:respawn:/sbin/agetty 38400 tty6 linux
 
-#ca:2345:respawn: ...wlan data....? > /dev/tty10
+ca:2345:respawn:/usr/bin/watch -n30 cat /proc/meminfo > /dev/tty10
 cb:2345:respawn:/usr/bin/watch -n30 /opt/tty_sysmon.sh > /dev/tty11
 
 
