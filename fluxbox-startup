@@ -18,7 +18,7 @@ xmodmap "/home/cuchulain/.Xmodmap"
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-syndaemon -d -k -i 1
+syndaemon -d -k -i 1 &
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/cuchulain/.fluxbox/log"
