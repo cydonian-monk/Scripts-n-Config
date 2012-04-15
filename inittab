@@ -48,8 +48,9 @@ c3:2345:respawn:/sbin/agetty 38400 tty3 linux
 #c5:2345:respawn:/sbin/agetty 38400 tty5 linux
 #c6:2345:respawn:/sbin/agetty 38400 tty6 linux
 
-ca:2345:respawn:/usr/bin/watch -n30 cat /proc/meminfo > /dev/tty10
-cb:2345:respawn:/usr/bin/watch -n30 /opt/tty_sysmon.sh > /dev/tty11
+c9:12345:respawn:/usr/bin/watch -n30 df > /dev/tty9
+ca:12345:respawn:/usr/bin/watch -n30 cat /proc/meminfo > /dev/tty10
+cb:12345:respawn:/usr/bin/watch -n30 /opt/tty_sysmon.sh > /dev/tty11
 
 
 # SERIAL CONSOLES
