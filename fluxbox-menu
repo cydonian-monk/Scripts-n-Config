@@ -90,8 +90,6 @@
   [exec] (Suspend) {sudo pm-suspend}
   [exec] (Hibernate) {sudo pm-hibernate}
   [exec] () {}
-  [exec] (syndaemon) {syndaemon -d -k -i 1}
-  [exec] () {}
   [exec] (Mount cm Shares) {sudo /opt/cm_mount.sh}
   [exec] (UnMount cm Shares) {sudo /opt/cm_umount.sh}
   [exec] () {}

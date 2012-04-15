@@ -30,7 +30,7 @@ fi
 
 # run some nice commands
 
-command="`fluxbox`"
+command="`startfluxbox`"
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 	for f in /etc/X11/xinit/xinitrc.d/* ; do
@@ -39,4 +39,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 	unset f
 fi
 
+#syndaemon -d -k -i 1 &
 exec $command
