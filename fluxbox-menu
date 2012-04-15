@@ -28,7 +28,7 @@
 [exec] () {} 
 
 [exec] (Chrome) {google-chrome}
-[exec] (Firefox) {/opt/firefox/firefox}
+#[exec] (Firefox) {/opt/firefox/firefox}
 #[exec] (Chromium) {chromium}
 [exec] (Pidgin) {pidgin}
 
@@ -57,7 +57,7 @@
 #  [exec] (pcalc) {pcalc}
   [exec] (gcalctool) {gcalctool}
   [exec] () {}
-  [exec] (ghex2) {ghex2}
+  [exec] (ghex) {ghex}
 
 [end]
 
@@ -89,6 +89,8 @@
   [exec] (Restart) {sudo shutdown -r now}
   [exec] (Suspend) {sudo pm-suspend}
   [exec] (Hibernate) {sudo pm-hibernate}
+  [exec] () {}
+  [exec] (syndaemon) {syndaemon -d -k -i 1}
   [exec] () {}
   [exec] (Mount cm Shares) {sudo /opt/cm_mount.sh}
   [exec] (UnMount cm Shares) {sudo /opt/cm_umount.sh}
