@@ -10,8 +10,7 @@ xinitrc - I've only used blackbox/fluxbox for the last several years.
     I save a few steps in xinit by only allowing fluxbox to run. Fewer things
     to fail, and it starts (marginally) faster. What? No failover? If 
     fluxbox doesn't start then your X install is probably hosed anyway.
-
-    Requires: xorg-X11
+  Requires: xorg-X11, fluxbox
 
 video-dualhead.sh - Start and stops an old dual-head monitor setup. Old, old 
     script here. xorg-X11 has fixed the issue this script existed for.  
@@ -19,12 +18,12 @@ video-dualhead.sh - Start and stops an old dual-head monitor setup. Old, old
     has changed considerably since, so it may not even work.  The primary
     use of this script was to enable and disable HDMI/DVI out to my TV 
     for watching video.
+  Requires: xrandr
 
-    Requires: xrandr
-
-fluxbox-menu - The menu file from my .fluxbox resource folder.
-
-    Requires: fluxbox
+fluxbox-menu - The menu file from ~/.fluxbox folder.
+fluxbox-keys - Key sequence file from ~/.fluxbox folder.
+fluxbox-startup - Startup file from ~/.fluxbox folder. Used by startfluxbox.
+  Requires: fluxbox, syndaemon
 
 .bashrc
     My default .bashrc, based on the Gentoo default.
