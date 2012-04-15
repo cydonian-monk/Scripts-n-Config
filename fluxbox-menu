@@ -42,6 +42,7 @@
 [submenu] (Development)
   [exec] (Eclipse SDK) {eclipse-3.5}
   [exec] (Android SDK) {xterm -e 'sudo /opt/android-sdk-linux_x86/tools/android'}
+  [exec] (Arduino IDE) {/usr/share/arduino-0021/arduino}
 [end]
 
 [submenu] (Office Apps)
