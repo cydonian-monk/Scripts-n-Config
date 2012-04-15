@@ -9,13 +9,13 @@
 #
 # Note: 2011/07/10 - This script has not been used or tested since 2009. AWC.
 #
-# Authors: AWC - Andy W. Cummings <cydonian.monk@gmail.com>
+# Contributor(s): AWC - Andy W. Cummings <cydonian.monk@gmail.com>
 # Revision History: 
-#      2012/04/12 AWC Initial github share.
-# 1.03 2008-08-31 AWC Moved VGA to left.
-# 1.02 2008-05-25 AWC Corrected "off" support.
-# 1.01 2008-05-24 AWC Added "off" support.
-# 1.00 2008-05-24 AWC Initial Add. 
+#  --.-- 2012/04/12 AWC Initial github share.
+#   1.03 2008-08-31 AWC Moved VGA to left.
+#   1.02 2008-05-25 AWC Corrected "off" support.
+#   1.01 2008-05-24 AWC Added "off" support.
+#   1.00 2008-05-24 AWC Initial Add. 
 
 if [ "$1" = "off" ]; then
    xrandr --output DVI-0 --off

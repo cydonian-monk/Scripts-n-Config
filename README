@@ -44,7 +44,20 @@ cm_umount.sh
 codeheader
     The header include for my personal coding projects.
 
+import.sh
+    Build a filename using the date and time and pass it to import.  This 
+    script checks to see if my fileshare is mounted. If yes, screenshots
+    are saved to the fileshare. If not, they get dumped into the home
+    directory.
+  Requires: import (part of media-gfx/imagemagick)
+
+
 Release Notes:
+
+2012/04/15 - Andy Cummings <cydonian.monk@gmail.com>
+
+ Added a script to save screenshots from import to my regular locations.
+ Added said script into fluxbox menu.
 
 2012/04/12 - Andy Cummings <cydonian.monk@gmail.com>
 

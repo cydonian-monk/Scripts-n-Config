@@ -1,9 +1,9 @@
 # bashrc based on the Gentoo default from.... 2005?
 #
-# Authors: AWC - Andy W. Cummings <cydonian.monk@gmail.com>
+# Contributor(s): AWC - Andy W. Cummings <cydonian.monk@gmail.com>
 # Revision History:
-#      2012/04/12 - Copied root default prompt.
-#      2005/??/?? - Initial creation.
+#        2012/04/12 - Copied root default prompt.
+#        2005/??/?? - Initial creation.
 
 #if [[ $ != *i* ]]; then
 #    return

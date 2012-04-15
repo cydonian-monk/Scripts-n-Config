@@ -9,10 +9,10 @@
 # Modified by:  Mike Frysinger, <vapier@gentoo.org>
 # Modified by:  Robin H. Johnson, <robbat2@gentoo.org>
 #
-# Authors: AWC - Andy W. Cummings <cydonian.monk@gmail.com>
+# Contributor(s): AWC - Andy W. Cummings <cydonian.monk@gmail.com>
 # Revision History:  
-#      2012/04/13 AWC Added MemInfo to tty10.
-#      2012/04/12 AWC Initial github copy.
+#        2012/04/13 AWC Added MemInfo to tty10.
+#        2012/04/12 AWC Initial github copy.
 #
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/sysvinit/files/inittab-2.87,v 1.1 2010/01/08 16:55:07 williamh Exp $
 
