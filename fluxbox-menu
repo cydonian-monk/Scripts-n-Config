@@ -34,6 +34,11 @@
 
 [exec] () {}
 
+[exec] (Start Dropbox) {/opt/dropbox/dropbox}
+[exec] (Networking Tool) {} #Pending
+
+[exec] () {}
+
 [submenu] (Photo Tools)
   [exec] (Gimp) {gimp}
   [exec] (gthumb) {gthumb}
