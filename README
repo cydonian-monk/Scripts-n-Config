@@ -51,6 +51,11 @@ import.sh
     directory.
   Requires: import (part of media-gfx/imagemagick)
 
+natural_scroll.sh
+    Reconfigures the default scroll direction of the Synaptics touchpad
+    to match that used by the Apple OS-X "natural scrolling."
+  Requires: xinput (x11-apps/xinput)
+
 
 Release Notes:
 
