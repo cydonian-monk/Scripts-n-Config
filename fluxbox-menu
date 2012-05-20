@@ -34,14 +34,10 @@
 
 [exec] () {}
 
-[exec] (Start Dropbox) {/opt/dropbox/dropbox}
-[exec] (Networking Tool) {} #Pending
-
-[exec] () {}
-
 [submenu] (Photo Tools)
   [exec] (Gimp) {gimp}
   [exec] (gthumb) {gthumb}
+  [exec] () {}
   [exec] (import) {/opt/import.sh}
 [end]
 
@@ -70,6 +66,30 @@
 
 [submenu] (Network Tools)
   [exec] (Wireshark) {xterm -e 'sudo wireshark'}
+  [exec] () {}
+  [exec] (Start eth0) {sudo /etc/init.d/net.eth0 start}
+  [exec] (Stop eth0) {sudo /etc/init.d/net.eth0 stop}
+  [exec] (Start WPA Supplicant) {sudo /etc/init.d/wpa_supplicant start}
+  [exec] (Stop WPA Supplicant) {sudo /etc/init.d/wpa_supplicant stop}
+  [exec] (Start wlan0) {}
+  [exec] (Stop wlan0) {}
+  [exec] () {}
+  [exec] (Start Dropbox) {/opt/dropbox/dropbox}
+  [exec] (Mount cm Shares) {sudo /opt/cm_mount.sh}
+  [exec] (UnMount cm Shares) {sudo /opt/cm_umount.sh}
+[end]
+
+[submenu] (System Admin)
+  [exec] (Shutdown) {sudo shutdown -h now}
+  [exec] (Restart) {sudo shutdown -r now}
+  [exec] (Suspend) {sudo pm-suspend}
+  [exec] (Hibernate) {sudo pm-hibernate}
+  [exec] () {}
+  [exec] (Start cupsd) {sudo /etc/init.d/cupsd start}
+  [exec] (Stop cupsd) {sudo /etc/init.d/cupsd stop}
+  [exec] () {}
+  [exec] (Reload .Xdefaults) {xrdb -load $HOME/.Xdefaults}
+  [exec] (top) {xterm -e top} 
 [end]
 
 [submenu] (Fluxbox menu)
@@ -90,22 +110,6 @@
 [end]
 
 [exec] () {}
-
-[submenu] (System Admin)
-  [exec] (Shutdown) {sudo shutdown -h now}
-  [exec] (Restart) {sudo shutdown -r now}
-  [exec] (Suspend) {sudo pm-suspend}
-  [exec] (Hibernate) {sudo pm-hibernate}
-  [exec] () {}
-  [exec] (Mount cm Shares) {sudo /opt/cm_mount.sh}
-  [exec] (UnMount cm Shares) {sudo /opt/cm_umount.sh}
-  [exec] () {}
-  [exec] (Start cupsd) {sudo /etc/init.d/cupsd start}
-  [exec] (Stop cupsd) {sudo /etc/init.d/cupsd stop}
-  [exec] () {}
-  [exec] (Reload .Xdefaults) {xrdb -load $HOME/.Xdefaults}
-  [exec] (top) {xterm -e top} 
-[end]
 
 [exit] (Exit)
 

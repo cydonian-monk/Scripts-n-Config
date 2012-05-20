@@ -19,6 +19,8 @@ xmodmap "/home/cuchulain/.Xmodmap"
 # Because it is the last app you have to run it with ''exec'' before it.
 
 syndaemon -d -k -i 1 &
+dropbox &
+/opt/natural_scroll.sh &
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/cuchulain/.fluxbox/log"
