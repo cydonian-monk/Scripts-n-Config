@@ -24,21 +24,28 @@
 [encoding] {UTF-8}
 
 [exec] (gterm) {gnome-terminal}
+[exec] (Nautilus) {nautilus --no-desktop}
 #[exec] (xterm) {xterm} 
 [exec] () {} 
 
 [exec] (Chrome) {google-chrome}
-#[exec] (Firefox) {/opt/firefox/firefox}
-#[exec] (Chromium) {chromium}
-[exec] (Pidgin) {pidgin}
 
 [exec] () {}
 
-[submenu] (Photo Tools)
+[submenu] (Photo)
   [exec] (Gimp) {gimp}
   [exec] (gthumb) {gthumb}
   [exec] () {}
   [exec] (import) {/opt/import.sh}
+[end]
+
+[submenu] (Internet)
+  [exec] (Chrome) {google-chrome}
+  [exec] (Chromium) {chromium}
+  [exec] (Firefox) {/opt/firefox/firefox}
+  [exec] (Pidgin) {pidgin}
+  [exec] (Gnome-FTP) {gftp}
+  [exec] (Start Dropbox) {/opt/dropbox/dropbox}
 [end]
 
 [submenu] (Development)
@@ -74,7 +81,6 @@
   [exec] (Start wlan0) {}
   [exec] (Stop wlan0) {}
   [exec] () {}
-  [exec] (Start Dropbox) {/opt/dropbox/dropbox}
   [exec] (Mount cm Shares) {sudo /opt/cm_mount.sh}
   [exec] (UnMount cm Shares) {sudo /opt/cm_umount.sh}
 [end]
