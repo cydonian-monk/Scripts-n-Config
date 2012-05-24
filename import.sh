@@ -21,7 +21,12 @@ FILENAME="$DATE$TAIL"
 BASEPATH=""
 USERHOME=$(echo ~)
 
-if [ -e /photo/screenshots ] ; then
+#If Dropbox is connected, save there.
+if [ -e /dropbox/Screenshots ] ; then
+{
+    BASEPATH="/dropbox/Screenshots/"
+}
+elif [ -e /photo/screenshots ] ; then
 {
     BASEPATH="/photo/screenshots/"
 }
