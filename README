@@ -56,6 +56,8 @@ natural_scroll.sh
     to match that used by the Apple OS-X "natural scrolling."
   Requires: xinput (x11-apps/xinput)
 
+issue
+    /etc/issue for my systems.
 
 Release Notes:
 
