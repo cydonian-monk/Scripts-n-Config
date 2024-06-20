@@ -1,10 +1,15 @@
 # Name - Short Description
 #
 # Notes
+#  [any details beyond just what it does]
 #
 # Usage
+#  [insert usage here]
 #
-# Contributor(s): AWC - Andy W. Cummings <cydonian.monk@gmail.com>
+# Requires
+#  [list dependencies, if any beyond shell]
+#
+# Contributor(s): AWC - Andy W. Cummings <cydonian.monk+github@gmail.com>
 # Revision History:
-#  VV.mm YYYY/MM/DD aut Notes
+#  VV.mm YYYY/MM/DD AWC [short message]
 
